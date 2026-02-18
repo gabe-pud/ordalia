@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dxfw5w3pshges"]
+
+[ext_resource type="Texture2D" uid="uid://dqde32ccrtrje" path="res://resources/prototype textures/Orange/texture_10.png" id="1_uecpb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_raltb"]
+albedo_texture = ExtResource("1_uecpb")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_gsqoq"]
+material = SubResource("StandardMaterial3D_raltb")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jeuno"]
+
+[node name="TestBox" type="Node3D" unique_id=1131212083]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1520737110]
+mesh = SubResource("BoxMesh_gsqoq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=409300613]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1661082078]
+shape = SubResource("BoxShape3D_jeuno")
