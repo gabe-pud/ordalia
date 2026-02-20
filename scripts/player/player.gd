@@ -12,9 +12,13 @@ extends CharacterBody3D
 var move_speed := base_move_speed
 var move_direction := Vector3.ZERO
 
-@onready var camera_pivot: Node3D = %CameraStand
-@onready var camera: Camera3D = %Camera3D
-@onready var sprite: AnimatedSprite3D = %AnimatedSprite3D
+@onready var camera_pivot: Node3D = %CameraPivot
+@onready var ots_camera: Camera3D = %OtsCamera
+@onready var camera_stand: Node3D = $CameraStannd
+@onready var locked_camera: Camera3D = %LockedCamera
+@onready var sprite: AnimatedSprite3D = $AnimatedSprite3D
+@onready var collision_shape_3d: CollisionShape3D = $CollisionShape3D
+
 
 var _camera_input_direction := Vector2.ZERO
 @warning_ignore("unused_private_class_variable")
@@ -39,25 +43,33 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _physics_process(delta: float) -> void:
-	camera_pivot.rotation.x -= _camera_input_direction.y * mouse_sesitivity_y * delta
-	camera_pivot.rotation.x = clamp(camera_pivot.rotation.x, -PI / 12.0, PI / 12.0)
-	camera_pivot.rotation.y -= _camera_input_direction.x * mouse_sesitivity_x * delta
+	if ots_camera.current == true:
+		camera_pivot.rotation.x -= _camera_input_direction.y * mouse_sesitivity_y * delta
+		camera_pivot.rotation.x = clamp(camera_pivot.rotation.x, -PI / 12.0, PI / 12.0)
+		camera_pivot.rotation.y -= _camera_input_direction.x * mouse_sesitivity_x * delta
+		
+		_camera_input_direction = Vector2.ZERO
+
+
+func get_movement_direction(delta, speed_multiplyer = 1.0) -> Vector3:
+	var raw_input := Input.get_vector("left","right","forward","back")
 	
-	_camera_input_direction = Vector2.ZERO
+	var forward : Vector3
+	var right : Vector3
+	if ots_camera.current == true:
+		forward = ots_camera.global_basis.z
+		right = ots_camera.global_basis.x
+	else:
+		forward = locked_camera.global_basis.z
+		right = locked_camera.global_basis.x
 
-
-func get_movement_direction(delta) -> Vector3:
-	var raw_input := Input.get_vector("left","right","foward","back")
-	var foward = camera.global_basis.z
-	var right = camera.global_basis.x
-
-	var _move_direction = foward * raw_input.y + right * raw_input.x
+	var _move_direction = forward * raw_input.y + right * raw_input.x
 	_move_direction.y = 0.0
 	_move_direction = _move_direction.normalized()
 	
 	var y_velocity := velocity.y
 	velocity.y = 0
-	velocity = velocity.move_toward(_move_direction * move_speed, acceleration * delta)
+	velocity = velocity.move_toward(_move_direction * move_speed * speed_multiplyer, acceleration * delta)
 	velocity.y = y_velocity + gravity * delta
 
 	return _move_direction
@@ -68,3 +80,8 @@ func set_last_movement_direction(_move_direction):
 		_last_movement_direction = _move_direction
 	var target_angle := Vector3.FORWARD.signed_angle_to(_last_movement_direction, Vector3.UP)
 	sprite.global_rotation.y = target_angle
+
+
+func _on_area_3d_2_body_entered(body: Node3D) -> void:
+	body.ots_camera.current = true
+	body.locked_camera.current = false

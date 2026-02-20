@@ -2,24 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgtxeap7raedt"
-path.s3tc="res://.godot/imported/Mapa 1 (2)_Estalagmite textura.png-c1522b6534d9cbd828e7fadebadaca3b.s3tc.ctex"
+uid="uid://3ed38sw3jjdx"
+path="res://.godot/imported/Mapa 1_Agua.jpg-4708d3a4042a7a2a2338d77ee6212440.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "a06915cb64e484e226e10752ec66c4b6"
+"md5": "1f0c48c2b9935b7da640a5ed4df06e6c"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1 (2)_Estalagmite textura.png"
-dest_files=["res://.godot/imported/Mapa 1 (2)_Estalagmite textura.png-c1522b6534d9cbd828e7fadebadaca3b.s3tc.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_Agua.jpg"
+dest_files=["res://.godot/imported/Mapa 1_Agua.jpg-4708d3a4042a7a2a2338d77ee6212440.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

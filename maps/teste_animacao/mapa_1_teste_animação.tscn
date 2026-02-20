@@ -1,0 +1,224 @@
+[gd_scene format=3 uid="uid://fp8njuqwfvx7"]
+
+[ext_resource type="PackedScene" uid="uid://c5t7sn138egdn" path="res://maps/teste_animacao/Mapa 1 teste animação.glb" id="1_3tmf8"]
+[ext_resource type="Shader" uid="uid://cph0qyn2xvik" path="res://scenes/new_shader.tres" id="2_b31pv"]
+[ext_resource type="Shader" uid="uid://blw47f26nxlmt" path="res://maps/teste_animacao/mapa_1_teste_animação.tres" id="2_pff5s"]
+[ext_resource type="Texture2D" uid="uid://m2cl072c8f55" path="res://maps/teste_animacao/Mapa 1 teste animação_Agua - parada.jpg" id="3_6g0il"]
+[ext_resource type="Texture2D" uid="uid://m2cl072c8f55" path="res://maps/teste_animacao/Mapa 1 teste animação_Agua - parada.jpg" id="3_ndj37"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oe268"]
+render_priority = 0
+shader = ExtResource("2_pff5s")
+shader_parameter/Vector2Parameter = Vector2(0, 0)
+shader_parameter/TextureParameterTriplanar = ExtResource("3_6g0il")
+shader_parameter/triplanar_scale = Vector3(1, 1, 1)
+shader_parameter/triplanar_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 0.5
+
+[sub_resource type="Animation" id="Animation_ckiny"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:surface_material_override/0:shader_parameter/Vector2Parameter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mvle4"]
+resource_name = "new_animation"
+length = 8.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:surface_material_override/0:shader_parameter/Vector2Parameter")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 3.9901025, 5.994454, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0.02), Vector2(0.02, 0.02), Vector2(0.02, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s268j"]
+_data = {
+&"RESET": SubResource("Animation_ckiny"),
+&"new_animation": SubResource("Animation_mvle4")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3c7cy"]
+render_priority = 0
+shader = ExtResource("2_pff5s")
+shader_parameter/Vector2Parameter = Vector2(0, 0)
+shader_parameter/TextureParameterTriplanar = ExtResource("3_6g0il")
+shader_parameter/triplanar_scale = Vector3(1, 1, 1)
+shader_parameter/triplanar_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 0.5
+
+[sub_resource type="Animation" id="Animation_rjqba"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:surface_material_override/0:shader_parameter/Vector2Parameter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jy0sj"]
+resource_name = "new_animation"
+length = 8.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:surface_material_override/0:shader_parameter/Vector2Parameter")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4.00471, 5.982031, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1.0000005),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0.02), Vector2(0.02, 0.02), Vector2(0.02, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5wlb6"]
+_data = {
+&"RESET": SubResource("Animation_rjqba"),
+&"new_animation": SubResource("Animation_jy0sj")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7oryr"]
+render_priority = 0
+shader = ExtResource("2_pff5s")
+shader_parameter/Vector2Parameter = Vector2(0, 0)
+shader_parameter/TextureParameterTriplanar = ExtResource("3_6g0il")
+shader_parameter/triplanar_scale = Vector3(1, 1, 1)
+shader_parameter/triplanar_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 0.5
+
+[sub_resource type="Animation" id="Animation_4tv05"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:surface_material_override/0:shader_parameter/Vector2Parameter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_60ihj"]
+resource_name = "new_animation"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:surface_material_override/0:shader_parameter/Vector2Parameter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uae4l"]
+_data = {
+&"RESET": SubResource("Animation_4tv05"),
+&"new_animation": SubResource("Animation_60ihj")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_olw8x"]
+render_priority = 0
+shader = ExtResource("2_b31pv")
+shader_parameter/Vector2Parameter = Vector2(0, 0)
+shader_parameter/TextureParameterTriplanar = ExtResource("3_ndj37")
+shader_parameter/triplanar_scale = Vector3(1, 1, 1)
+shader_parameter/triplanar_offset = Vector3(0, -0.04, 0)
+shader_parameter/triplanar_sharpness = 0.5
+
+[sub_resource type="Animation" id="Animation_18kqu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:surface_material_override/0:shader_parameter/Vector2Parameter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ba52d"]
+resource_name = "new_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:surface_material_override/0:shader_parameter/Vector2Parameter")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3i4pr"]
+_data = {
+&"RESET": SubResource("Animation_18kqu"),
+&"new_animation": SubResource("Animation_ba52d")
+}
+
+[node name="Mapa 1 teste animação" unique_id=543166129 instance=ExtResource("1_3tmf8")]
+
+[node name="Agua" parent="." index="1" unique_id=741052401]
+surface_material_override/0 = SubResource("ShaderMaterial_oe268")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Agua" index="0" unique_id=686974000]
+libraries/ = SubResource("AnimationLibrary_s268j")
+autoplay = &"new_animation"
+
+[node name="Agua 2" parent="." index="2" unique_id=332927025]
+surface_material_override/0 = SubResource("ShaderMaterial_3c7cy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Agua 2" index="0" unique_id=241911757]
+libraries/ = SubResource("AnimationLibrary_5wlb6")
+autoplay = &"new_animation"
+
+[node name="Agua 3" parent="." index="3" unique_id=1295882672]
+surface_material_override/0 = SubResource("ShaderMaterial_7oryr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Agua 3" index="0" unique_id=1315280037]
+libraries/ = SubResource("AnimationLibrary_uae4l")
+autoplay = &"new_animation"
+
+[node name="Agua 4" parent="." index="4" unique_id=551201886]
+surface_material_override/0 = SubResource("ShaderMaterial_olw8x")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Agua 4" index="0" unique_id=2050291687]
+libraries/ = SubResource("AnimationLibrary_3i4pr")
+autoplay = &"new_animation"

@@ -2,21 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1kmp76pt7e4c"
-path.s3tc="res://.godot/imported/Mapa 1 (2)_Agua - 2.jpg-2c7cb54173fe62a1eb8c864d86260319.s3tc.ctex"
+uid="uid://dn1ky8j2nnrhp"
+path="res://.godot/imported/Mapa 1_Pedra cor.png-50fca114878065bf13d01debb56d9ec1.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
+}
+generator_parameters={
+"md5": "2fd643894f66573edfe6eca57cccd9f9"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1 (2)_Agua - 2.jpg"
-dest_files=["res://.godot/imported/Mapa 1 (2)_Agua - 2.jpg-2c7cb54173fe62a1eb8c864d86260319.s3tc.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_Pedra cor.png"
+dest_files=["res://.godot/imported/Mapa 1_Pedra cor.png-50fca114878065bf13d01debb56d9ec1.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

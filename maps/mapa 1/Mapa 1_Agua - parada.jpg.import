@@ -2,35 +2,34 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d04ddjkas7jsi"
-path.s3tc="res://.godot/imported/Mapa 1 (2)_Parede caverna _n.png-1edb2b1bfbe7cb87d5b991b8d51fa429.s3tc.ctex"
+uid="uid://bn24bfk70q72p"
+path="res://.godot/imported/Mapa 1_Agua - parada.jpg-9232d702d49e48c8d54187ebdabe66a1.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "f5e2072dbe85c27cfc188f4423852028"
+"md5": "1f0c48c2b9935b7da640a5ed4df06e6c"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1 (2)_Parede caverna _n.png"
-dest_files=["res://.godot/imported/Mapa 1 (2)_Parede caverna _n.png-1edb2b1bfbe7cb87d5b991b8d51fa429.s3tc.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_Agua - parada.jpg"
+dest_files=["res://.godot/imported/Mapa 1_Agua - parada.jpg-9232d702d49e48c8d54187ebdabe66a1.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://maps/Mapa 1 (2)_Parede caverna _n.png"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

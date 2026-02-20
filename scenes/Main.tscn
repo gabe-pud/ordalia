@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://b073lr7e82ceb"]
 
-[ext_resource type="PackedScene" uid="uid://c5t7sn138egdn" path="res://maps/teste_animacao/Mapa 1 teste animação.glb" id="3_0bbpv"]
 [ext_resource type="PackedScene" uid="uid://cc7bnft0we11n" path="res://scenes/Player.tscn" id="3_rarhs"]
 [ext_resource type="PackedScene" uid="uid://dxfw5w3pshges" path="res://scenes/TestBox.tscn" id="4_rarhs"]
+[ext_resource type="PackedScene" uid="uid://k60rex0pmecx" path="res://scenes/camera_switch.tscn" id="4_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://beugxk2ytu41q" path="res://maps/mapa 1/Mapa 1.glb" id="5_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://e84pby1vmo52" path="res://scenes/HangColision.tscn" id="6_c01mt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4xowi"]
 sky_top_color = Color(0.45242697, 0.4001497, 0.52569026, 1)
@@ -24,62 +26,50 @@ glow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1340217298]
 environment = SubResource("Environment_noarx")
 
-[node name="Mapa 1 teste animação" parent="." unique_id=543166129 instance=ExtResource("3_0bbpv")]
-metadata/_edit_lock_ = true
+[node name="Mapa 1" parent="." unique_id=2085106416 instance=ExtResource("5_vcsgt")]
 
 [node name="Player" parent="." unique_id=1919932343 instance=ExtResource("3_rarhs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9572744, 14.0111685, 4.927899)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 14, 5)
 
 [node name="TestBoxContainer" type="Node" parent="." unique_id=173396206]
 
-[node name="TestBox" parent="TestBoxContainer" unique_id=1131212083 instance=ExtResource("4_rarhs")]
-transform = Transform3D(1, 0, 0, 0, 2.5, 0, 0, 0, 5, 24.00567, 4.9828544, -24.171)
-visible = false
-
-[node name="TestBox2" parent="TestBoxContainer" unique_id=1618352923 instance=ExtResource("4_rarhs")]
-transform = Transform3D(2.375, 0, 0, 0, 0.5, 0, 0, 0, 3.61, 44.460773, 3.510006, -30.6036)
-visible = false
-
-[node name="TestBox3" parent="TestBoxContainer" unique_id=827299723 instance=ExtResource("4_rarhs")]
-transform = Transform3D(2.115, 0, 0, 0, 0.5, 0, 0, 0, 2.935, 41.005028, 5.8623524, -31.034323)
-visible = false
-
-[node name="TestBox4" parent="TestBoxContainer" unique_id=1184798206 instance=ExtResource("4_rarhs")]
-transform = Transform3D(4.6648617, 0, -1.7997396, 0, 0.5, 0, 1.7997396, 0, 4.6648617, 46.63256, 8.071133, -21.87879)
-visible = false
-
-[node name="TestBox5" parent="TestBoxContainer" unique_id=754610639 instance=ExtResource("4_rarhs")]
-transform = Transform3D(5.9135833, -0.014160523, -1.6354872, 0.11569773, 0.49968186, -0.13421428, 2.3917675, 0.010840248, 4.050194, 55.094242, 6.7149663, -28.163359)
-visible = false
-
-[node name="TestBox6" parent="TestBoxContainer" unique_id=402543652 instance=ExtResource("4_rarhs")]
-transform = Transform3D(10.044727, -1.4758392e-09, 2.9264777, -0.39329973, 0.4982465, 0.52333635, -4.683681, -0.041838937, 6.2322464, 66.58049, 7.9431763, -23.148678)
-visible = false
-
-[node name="TestBox7" parent="TestBoxContainer" unique_id=1586759016 instance=ExtResource("4_rarhs")]
-transform = Transform3D(5, 0, 0, 0, 2, 0, 0, 0, 1, 92, 9.5, -62.338)
-visible = false
-
-[node name="TestBox8" parent="TestBoxContainer" unique_id=1239168222 instance=ExtResource("4_rarhs")]
-transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 1, 92, 14, -76.127)
-visible = false
-
-[node name="TestBox9" parent="TestBoxContainer" unique_id=1180985740 instance=ExtResource("4_rarhs")]
-transform = Transform3D(5, 0, 0, 0, 2, 0, 0, 0, 1, 92, 19.513, -80.22428)
-visible = false
-
-[node name="TestBox10" parent="TestBoxContainer" unique_id=635098848 instance=ExtResource("4_rarhs")]
-transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 7, 92.030945, 19.89737, -91.648735)
-visible = false
-
-[node name="TestBox11" parent="TestBoxContainer" unique_id=1906500534 instance=ExtResource("4_rarhs")]
-transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 6, 91.959915, 19.992395, -104.187904)
-visible = false
-
-[node name="TestBox12" parent="TestBoxContainer" unique_id=938594966 instance=ExtResource("4_rarhs")]
+[node name="2DSectionWall" parent="TestBoxContainer" unique_id=938594966 instance=ExtResource("4_rarhs")]
 transform = Transform3D(0.5, 0, 0, 0, 25, 0, 0, 0, 75, 95.23697, 16.923132, -69.43669)
 visible = false
 
-[node name="TestBox13" parent="TestBoxContainer" unique_id=437146563 instance=ExtResource("4_rarhs")]
+[node name="TestBox" parent="TestBoxContainer" unique_id=437146563 instance=ExtResource("4_rarhs")]
 transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 6, 92.0397, 5.4197674, -49.78275)
 visible = false
+
+[node name="TestBox2" parent="TestBoxContainer" unique_id=635098848 instance=ExtResource("4_rarhs")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 7, 92.030945, 19.89737, -91.648735)
+visible = false
+
+[node name="TestBox3" parent="TestBoxContainer" unique_id=1906500534 instance=ExtResource("4_rarhs")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 6, 91.959915, 19.992395, -104.187904)
+visible = false
+
+[node name="HangPositionContainer" type="Node" parent="." unique_id=1489894630]
+
+[node name="HangPosition" parent="HangPositionContainer" unique_id=1215003824 instance=ExtResource("6_c01mt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24.087934, 8.280492, -24.226788)
+
+[node name="HangPosition2" parent="HangPositionContainer" unique_id=1595155419 instance=ExtResource("6_c01mt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.06315, 12.500393, -62.143967)
+
+[node name="HangPosition3" parent="HangPositionContainer" unique_id=727072849 instance=ExtResource("6_c01mt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.01582, 22.497387, -80.136635)
+
+[node name="HangPosition4" parent="HangPositionContainer" unique_id=1707204034 instance=ExtResource("6_c01mt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.05277, 15.480265, -76.136635)
+
+[node name="HangPosition5" parent="HangPositionContainer" unique_id=1546826838 instance=ExtResource("6_c01mt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.00805, 18.450874, -76.136635)
+
+[node name="CameraSwitchContainer" type="Node" parent="." unique_id=958956789]
+
+[node name="CameraSwitch" parent="CameraSwitchContainer" unique_id=533843219 instance=ExtResource("4_vcsgt")]
+transform = Transform3D(-4.3929944e-08, 0, 5, 0, 4, 0, -1.005, 0, -2.1855695e-07, 92.07779, 11.027907, -30.99835)
+
+[node name="CameraSwitch2" parent="CameraSwitchContainer" unique_id=1285892485 instance=ExtResource("4_vcsgt")]
+transform = Transform3D(-4.371139e-08, 0, -5, 0, 6, 0, 1, 0, -2.1855695e-07, 91.931854, 26.074692, -109.521965)

@@ -2,21 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnlhqll1xmplv"
-path.s3tc="res://.godot/imported/Mapa 1 (2)_Agua - parada.jpg-bf101a381f51a6de7fe2559747c3fa3b.s3tc.ctex"
+uid="uid://dwafdfqfb6cf8"
+path="res://.godot/imported/Mapa 1_chao caverna.png-85927ea92a582eee21bf2f59ff029246.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
+}
+generator_parameters={
+"md5": "3edc7af2ea8b33fde0df763581146080"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1 (2)_Agua - parada.jpg"
-dest_files=["res://.godot/imported/Mapa 1 (2)_Agua - parada.jpg-bf101a381f51a6de7fe2559747c3fa3b.s3tc.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_chao caverna.png"
+dest_files=["res://.godot/imported/Mapa 1_chao caverna.png-85927ea92a582eee21bf2f59ff029246.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://k60rex0pmecx"]
+
+[ext_resource type="Script" uid="uid://droiqqstdv0um" path="res://scripts/LockedCameraSwitch.gd" id="1_u5s8j"]
+[ext_resource type="Script" uid="uid://dr8yaeem2uov7" path="res://scripts/ThirdPersonCameraSwitch.gd" id="2_tfn5l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_26x6q"]
+size = Vector3(0.5, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tcvf7"]
+size = Vector3(0.5, 1, 1)
+
+[node name="CameraSwitch" type="Node3D" unique_id=533843219]
+
+[node name="ThirdPersonSwitch" type="Area3D" parent="." unique_id=296887687]
+collision_layer = 3
+collision_mask = 2
+script = ExtResource("1_u5s8j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ThirdPersonSwitch" unique_id=1186784187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+shape = SubResource("BoxShape3D_26x6q")
+
+[node name="LockedCameraSwitch" type="Area3D" parent="." unique_id=2137353291]
+collision_layer = 3
+collision_mask = 2
+script = ExtResource("2_tfn5l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LockedCameraSwitch" unique_id=328932141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+shape = SubResource("BoxShape3D_tcvf7")
+
+[connection signal="body_entered" from="ThirdPersonSwitch" to="ThirdPersonSwitch" method="_on_body_entered"]
+[connection signal="body_entered" from="LockedCameraSwitch" to="LockedCameraSwitch" method="_on_body_entered"]

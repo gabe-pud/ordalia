@@ -2,24 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfljrh1tbb0cj"
-path.s3tc="res://.godot/imported/Mapa 1 (2)_Parede caverna.png-9a0b02a4c4049dcba4304f15c1397adb.s3tc.ctex"
+uid="uid://gicn0ug68glk"
+path="res://.godot/imported/Mapa 1_pedra mais lisa.png-bef883004b371fc2b6df4c4a1d7be1e6.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "229eb052c5174b2cccead4d9ad43f296"
+"md5": "673c5d81754bc34056d723e660ada4d9"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1 (2)_Parede caverna.png"
-dest_files=["res://.godot/imported/Mapa 1 (2)_Parede caverna.png-9a0b02a4c4049dcba4304f15c1397adb.s3tc.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_pedra mais lisa.png"
+dest_files=["res://.godot/imported/Mapa 1_pedra mais lisa.png-bef883004b371fc2b6df4c4a1d7be1e6.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

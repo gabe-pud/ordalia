@@ -2,35 +2,34 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b40lr1sto4kvl"
-path.s3tc="res://.godot/imported/Mapa 1 (2)_Estalactite cor.png-584f937dc216b77c85725796667e5159.s3tc.ctex"
+uid="uid://db5ofp5rnb7i1"
+path="res://.godot/imported/Mapa 1_pedra mais lisa_n.png-33f570c418149fa012dac5b7ac2e0a32.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "d4dae4fa6545c81384510fec52f58cfb"
+"md5": "a80f1f56db45c237aa8f684f53cc809e"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1 (2)_Estalactite cor.png"
-dest_files=["res://.godot/imported/Mapa 1 (2)_Estalactite cor.png-584f937dc216b77c85725796667e5159.s3tc.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_pedra mais lisa_n.png"
+dest_files=["res://.godot/imported/Mapa 1_pedra mais lisa_n.png-33f570c418149fa012dac5b7ac2e0a32.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://maps/mapa 1/Mapa 1_pedra mais lisa_n.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

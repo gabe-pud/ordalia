@@ -33,7 +33,10 @@ func _process(_delta):
 
 
 func camera_to_player_angle():
-	return rad_to_deg(angle_difference(Player.sprite.global_rotation.y,Player.camera_pivot.global_rotation.y))
+	if Player.ots_camera.current == true:
+		return rad_to_deg(angle_difference(Player.sprite.global_rotation.y,Player.camera_pivot.global_rotation.y))
+	else:
+		return rad_to_deg(angle_difference(Player.sprite.global_rotation.y,Player.camera_stand.global_rotation.y))
 
 
 func get_direction(angle):
@@ -44,11 +47,11 @@ func get_direction(angle):
 	elif angle > 67.5:
 		return  "right"
 	elif angle > 22.5:
-		return  "diagonal_right_fowards"
+		return  "diagonal_right_forwards"
 	elif angle > -22.5:
-		return  "fowards"
+		return  "forwards"
 	elif angle > -67.5:
-		return  "diagonal_left_fowards"
+		return  "diagonal_left_forwards"
 	elif angle > -112.5:
 		return  "left"
 	elif angle > -157.5:

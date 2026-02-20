@@ -2,11 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ytjrrh0e4gix"
-path.s3tc="res://.godot/imported/Mapa 1 (2)_Agua.jpg-34d94573ad93f66f7333d2153ed8fc4c.s3tc.ctex"
+uid="uid://dxhpein1f8sv4"
+path="res://.godot/imported/Mapa 1_Agua - 2.jpg-77095c6f78165f90683212b4158632f2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
 "md5": "1f0c48c2b9935b7da640a5ed4df06e6c"
@@ -14,12 +13,12 @@ generator_parameters={
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1 (2)_Agua.jpg"
-dest_files=["res://.godot/imported/Mapa 1 (2)_Agua.jpg-34d94573ad93f66f7333d2153ed8fc4c.s3tc.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_Agua - 2.jpg"
+dest_files=["res://.godot/imported/Mapa 1_Agua - 2.jpg-77095c6f78165f90683212b4158632f2.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

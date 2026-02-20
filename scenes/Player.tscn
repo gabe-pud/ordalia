@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://cxh7e3u5iey1a" path="res://scripts/player/CameraStateMachine.gd" id="7_fjrip"]
 [ext_resource type="Script" uid="uid://xpvl4px6xk8b" path="res://scripts/player/PlayerRun.gd" id="7_smehm"]
 [ext_resource type="Script" uid="uid://byc7qhjcgtgvd" path="res://scripts/player/PlayerFall.gd" id="8_bruh7"]
+[ext_resource type="Script" uid="uid://o4mj3vieua5o" path="res://scripts/player/PlayerHang.gd" id="10_o4126"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_khinc"]
 
@@ -103,7 +104,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_d3wef"]
-resource_name = "fall_diagonal_left_fowards"
+resource_name = "fall_diagonal_left_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -161,7 +162,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_lkdrv"]
-resource_name = "fall_diagonal_right_fowards"
+resource_name = "fall_diagonal_right_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -190,7 +191,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_p7iby"]
-resource_name = "fall_fowards"
+resource_name = "fall_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -280,10 +281,10 @@ tracks/1/keys = {
 _data = {
 &"fall_backwards": SubResource("Animation_bruh7"),
 &"fall_diagonal_left_backwards": SubResource("Animation_6eyey"),
-&"fall_diagonal_left_fowards": SubResource("Animation_d3wef"),
+&"fall_diagonal_left_forwards": SubResource("Animation_d3wef"),
 &"fall_diagonal_right_backwards": SubResource("Animation_o4126"),
-&"fall_diagonal_right_fowards": SubResource("Animation_lkdrv"),
-&"fall_fowards": SubResource("Animation_p7iby"),
+&"fall_diagonal_right_forwards": SubResource("Animation_lkdrv"),
+&"fall_forwards": SubResource("Animation_p7iby"),
 &"fall_left": SubResource("Animation_0rnld"),
 &"fall_right": SubResource("Animation_srp4u")
 }
@@ -347,7 +348,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_y4r1p"]
-resource_name = "idle_diagonal_left_fowards"
+resource_name = "idle_diagonal_left_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -405,7 +406,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_3v2ag"]
-resource_name = "idle_diagonal_right_fowards"
+resource_name = "idle_diagonal_right_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -434,7 +435,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_jej6c"]
-resource_name = "idle_fowards"
+resource_name = "idle_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -524,10 +525,10 @@ tracks/1/keys = {
 _data = {
 &"idle_backwards": SubResource("Animation_fjrip"),
 &"idle_diagonal_left_backwards": SubResource("Animation_ur7pv"),
-&"idle_diagonal_left_fowards": SubResource("Animation_y4r1p"),
+&"idle_diagonal_left_forwards": SubResource("Animation_y4r1p"),
 &"idle_diagonal_right_backwards": SubResource("Animation_d2wvv"),
-&"idle_diagonal_right_fowards": SubResource("Animation_3v2ag"),
-&"idle_fowards": SubResource("Animation_jej6c"),
+&"idle_diagonal_right_forwards": SubResource("Animation_3v2ag"),
+&"idle_forwards": SubResource("Animation_jej6c"),
 &"idle_left": SubResource("Animation_f1ej7"),
 &"idle_right": SubResource("Animation_oprun")
 }
@@ -591,7 +592,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_31cv2"]
-resource_name = "jump_diagonal_left_fowards"
+resource_name = "jump_diagonal_left_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -649,7 +650,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_dt7fs"]
-resource_name = "jump_diagonal_right_fowards"
+resource_name = "jump_diagonal_right_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -678,7 +679,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_wqfne"]
-resource_name = "jump_fowards"
+resource_name = "jump_forwards"
 length = 0.083341666
 step = 0.083333336
 tracks/0/type = "value"
@@ -768,10 +769,10 @@ tracks/1/keys = {
 _data = {
 &"jump_backwards": SubResource("Animation_ke2ow"),
 &"jump_diagonal_left_backwards": SubResource("Animation_ujl30"),
-&"jump_diagonal_left_fowards": SubResource("Animation_31cv2"),
+&"jump_diagonal_left_forwards": SubResource("Animation_31cv2"),
 &"jump_diagonal_right_backwards": SubResource("Animation_pf23h"),
-&"jump_diagonal_right_fowards": SubResource("Animation_dt7fs"),
-&"jump_fowards": SubResource("Animation_wqfne"),
+&"jump_diagonal_right_forwards": SubResource("Animation_dt7fs"),
+&"jump_forwards": SubResource("Animation_wqfne"),
 &"jump_left": SubResource("Animation_wnwbv"),
 &"jump_right": SubResource("Animation_gl8cc")
 }
@@ -835,7 +836,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_bj30b"]
-resource_name = "run_diagonal_left_fowards"
+resource_name = "run_diagonal_left_forwards"
 length = 0.50000834
 step = 0.083333336
 tracks/0/type = "value"
@@ -893,7 +894,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_hax0n"]
-resource_name = "run_diagonal_right_fowards"
+resource_name = "run_diagonal_right_forwards"
 length = 0.50000834
 step = 0.083333336
 tracks/0/type = "value"
@@ -922,7 +923,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_l71n6"]
-resource_name = "run_fowards"
+resource_name = "run_forwards"
 length = 0.50000834
 step = 0.083333336
 tracks/0/type = "value"
@@ -1012,10 +1013,10 @@ tracks/1/keys = {
 _data = {
 &"run_backwards": SubResource("Animation_487ah"),
 &"run_diagonal_left_backwards": SubResource("Animation_md1ol"),
-&"run_diagonal_left_fowards": SubResource("Animation_bj30b"),
+&"run_diagonal_left_forwards": SubResource("Animation_bj30b"),
 &"run_diagonal_right_backwards": SubResource("Animation_jc3p3"),
-&"run_diagonal_right_fowards": SubResource("Animation_hax0n"),
-&"run_fowards": SubResource("Animation_l71n6"),
+&"run_diagonal_right_forwards": SubResource("Animation_hax0n"),
+&"run_forwards": SubResource("Animation_l71n6"),
 &"run_left": SubResource("Animation_t4otl"),
 &"run_right": SubResource("Animation_j2b1d")
 }
@@ -1079,7 +1080,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_a38lo"]
-resource_name = "walk_diagonal_left_fowards"
+resource_name = "walk_diagonal_left_forwards"
 length = 1.0000083
 step = 0.083333336
 tracks/0/type = "value"
@@ -1137,7 +1138,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_4ni07"]
-resource_name = "walk_diagonal_right_fowards"
+resource_name = "walk_diagonal_right_forwards"
 length = 1.0000083
 step = 0.083333336
 tracks/0/type = "value"
@@ -1166,6 +1167,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_a8ls1"]
+resource_name = "walk_forwards"
 length = 1.0000083
 step = 0.083333336
 tracks/0/type = "value"
@@ -1255,10 +1257,10 @@ tracks/1/keys = {
 _data = {
 &"walk_backwards": SubResource("Animation_qfm1y"),
 &"walk_diagonal_left_backwards": SubResource("Animation_i4ail"),
-&"walk_diagonal_left_fowards": SubResource("Animation_a38lo"),
+&"walk_diagonal_left_forwards": SubResource("Animation_a38lo"),
 &"walk_diagonal_right_backwards": SubResource("Animation_60mlk"),
-&"walk_diagonal_right_fowards": SubResource("Animation_4ni07"),
-&"walk_fowards": SubResource("Animation_a8ls1"),
+&"walk_diagonal_right_forwards": SubResource("Animation_4ni07"),
+&"walk_forwards": SubResource("Animation_a8ls1"),
 &"walk_left": SubResource("Animation_fulsm"),
 &"walk_right": SubResource("Animation_4r5pv")
 }
@@ -1907,6 +1909,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_bruh7"]
+size = Vector3(1, 0.5, 0.50598145)
+
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_khinc"]
 
 [node name="Player" type="CharacterBody3D" unique_id=1919932343]
@@ -1927,25 +1932,42 @@ libraries/run = SubResource("AnimationLibrary_ke2ow")
 libraries/walk = SubResource("AnimationLibrary_qfm1y")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=465382274]
-unique_name_in_owner = true
 pixel_size = 0.03125
 billboard = 2
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_nvl01")
 animation = &"idle"
 
-[node name="CameraStand" type="Node3D" parent="." unique_id=1404661491]
+[node name="HangColision" type="Area3D" parent="AnimatedSprite3D" unique_id=2127037966]
+collision_layer = 4
+collision_mask = 4
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatedSprite3D/HangColision" unique_id=1327366395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.24700928)
+shape = SubResource("BoxShape3D_bruh7")
+
+[node name="CameraStannd" type="Node3D" parent="." unique_id=1242204612]
+unique_name_in_owner = true
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="LockedCamera" type="Camera3D" parent="CameraStannd" unique_id=1809419242]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1404661491]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
-[node name="SpringArm3D" type="SpringArm3D" parent="CameraStand" unique_id=1459703183]
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1459703183]
 transform = Transform3D(1, 0, 0, 0, 0.9396926, 0.34202012, 0, -0.34202012, 0.9396926, 0, 0, 0)
 shape = SubResource("SeparationRayShape3D_khinc")
 spring_length = 4.5
 
-[node name="Camera3D" type="Camera3D" parent="CameraStand/SpringArm3D" unique_id=1621030860]
+[node name="OtsCamera" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1621030860]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
+current = true
 
 [node name="MovementStateMachine" type="Node" parent="." unique_id=614064289 node_paths=PackedStringArray("initial_state")]
 script = ExtResource("2_g2els")
@@ -1961,9 +1983,10 @@ script = ExtResource("3_qhqgy")
 Player = NodePath("../..")
 metadata/_custom_type_script = "uid://rcjset7x72xs"
 
-[node name="PlayerJump" type="Node" parent="MovementStateMachine" unique_id=281586079 node_paths=PackedStringArray("Player")]
+[node name="PlayerJump" type="Node" parent="MovementStateMachine" unique_id=281586079 node_paths=PackedStringArray("Player", "HangColision")]
 script = ExtResource("5_qlg0r")
 Player = NodePath("../..")
+HangColision = NodePath("../../AnimatedSprite3D/HangColision")
 metadata/_custom_type_script = "uid://bbs1uohw63sgx"
 
 [node name="PlayerRun" type="Node" parent="MovementStateMachine" unique_id=2026133589 node_paths=PackedStringArray("Player")]
@@ -1971,10 +1994,17 @@ script = ExtResource("7_smehm")
 Player = NodePath("../..")
 metadata/_custom_type_script = "uid://xpvl4px6xk8b"
 
-[node name="PlayerFall" type="Node" parent="MovementStateMachine" unique_id=680992755 node_paths=PackedStringArray("Player")]
+[node name="PlayerFall" type="Node" parent="MovementStateMachine" unique_id=680992755 node_paths=PackedStringArray("Player", "HangColision")]
 script = ExtResource("8_bruh7")
 Player = NodePath("../..")
+HangColision = NodePath("../../AnimatedSprite3D/HangColision")
 metadata/_custom_type_script = "uid://byc7qhjcgtgvd"
+
+[node name="PlayerHang" type="Node" parent="MovementStateMachine" unique_id=772535836 node_paths=PackedStringArray("Player", "HangColision")]
+script = ExtResource("10_o4126")
+Player = NodePath("../..")
+HangColision = NodePath("../../AnimatedSprite3D/HangColision")
+metadata/_custom_type_script = "uid://o4mj3vieua5o"
 
 [node name="CameraStateMachine" type="Node" parent="." unique_id=873466151 node_paths=PackedStringArray("Player", "movement_state_machine", "animation_player")]
 script = ExtResource("7_fjrip")

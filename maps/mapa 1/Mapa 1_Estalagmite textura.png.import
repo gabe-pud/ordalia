@@ -2,24 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cps4dpxkl2yvj"
-path.s3tc="res://.godot/imported/Mapa 1 (2)_pedra mais lisa.png-653ff56cd69c912b5ac2beacfc031ef8.s3tc.ctex"
+uid="uid://f3g16x6niyqw"
+path="res://.godot/imported/Mapa 1_Estalagmite textura.png-224e64e4e2e40f8585127127197e14bc.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "673c5d81754bc34056d723e660ada4d9"
+"md5": "a06915cb64e484e226e10752ec66c4b6"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1 (2)_pedra mais lisa.png"
-dest_files=["res://.godot/imported/Mapa 1 (2)_pedra mais lisa.png-653ff56cd69c912b5ac2beacfc031ef8.s3tc.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_Estalagmite textura.png"
+dest_files=["res://.godot/imported/Mapa 1_Estalagmite textura.png-224e64e4e2e40f8585127127197e14bc.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
