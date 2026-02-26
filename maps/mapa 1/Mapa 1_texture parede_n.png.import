@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyb332w8s2u1o"
-path="res://.godot/imported/Mapa 1_Agua_n.jpg-cf1768e21e8409e23dd398fb1bd9aeaf.ctex"
+uid="uid://752hby7mg5qn"
+path="res://.godot/imported/Mapa 1_texture parede_n.png-8fc82af31178ff4d3639a2a15a77040b.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "5ee770d63a88d0a2d26fb9b4348301e8"
+"md5": "4c65377e7fcc3af93c2d66c24fc32383"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1_Agua_n.jpg"
-dest_files=["res://.godot/imported/Mapa 1_Agua_n.jpg-cf1768e21e8409e23dd398fb1bd9aeaf.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_texture parede_n.png"
+dest_files=["res://.godot/imported/Mapa 1_texture parede_n.png-8fc82af31178ff4d3639a2a15a77040b.ctex"]
 
 [params]
 
@@ -29,7 +29,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://maps/mapa 1/Mapa 1_Agua_n.jpg"
+roughness/src_normal="res://maps/mapa 1/Mapa 1_texture parede_n.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

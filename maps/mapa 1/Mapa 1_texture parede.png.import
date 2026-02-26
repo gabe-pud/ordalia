@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3jgh4s1vf17c"
-path="res://.godot/imported/Mapa 1_Parede caverna.png-0010ada70a847016a84fd4dec825d6b7.ctex"
+uid="uid://cublbkyfp8ajg"
+path="res://.godot/imported/Mapa 1_texture parede.png-b31b47e76e10ee1f3c97a5271b13b25c.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "229eb052c5174b2cccead4d9ad43f296"
+"md5": "1a5579df0e8987e2792e227298a92773"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1_Parede caverna.png"
-dest_files=["res://.godot/imported/Mapa 1_Parede caverna.png-0010ada70a847016a84fd4dec825d6b7.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_texture parede.png"
+dest_files=["res://.godot/imported/Mapa 1_texture parede.png-b31b47e76e10ee1f3c97a5271b13b25c.ctex"]
 
 [params]
 

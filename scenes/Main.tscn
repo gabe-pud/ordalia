@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cc7bnft0we11n" path="res://scenes/Player.tscn" id="3_rarhs"]
 [ext_resource type="PackedScene" uid="uid://dxfw5w3pshges" path="res://scenes/TestBox.tscn" id="4_rarhs"]
 [ext_resource type="PackedScene" uid="uid://k60rex0pmecx" path="res://scenes/camera_switch.tscn" id="4_vcsgt"]
-[ext_resource type="PackedScene" uid="uid://beugxk2ytu41q" path="res://maps/mapa 1/Mapa 1.glb" id="5_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://baqbambwaa2qg" path="res://maps/mapa 1/Mapa 1.glb" id="5_vcsgt"]
 [ext_resource type="PackedScene" uid="uid://e84pby1vmo52" path="res://scenes/HangColision.tscn" id="6_c01mt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4xowi"]
@@ -26,16 +26,12 @@ glow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1340217298]
 environment = SubResource("Environment_noarx")
 
-[node name="Mapa 1" parent="." unique_id=2085106416 instance=ExtResource("5_vcsgt")]
+[node name="Mapa 1" parent="." unique_id=973903927 instance=ExtResource("5_vcsgt")]
 
 [node name="Player" parent="." unique_id=1919932343 instance=ExtResource("3_rarhs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 14, 5)
 
 [node name="TestBoxContainer" type="Node" parent="." unique_id=173396206]
-
-[node name="2DSectionWall" parent="TestBoxContainer" unique_id=938594966 instance=ExtResource("4_rarhs")]
-transform = Transform3D(0.5, 0, 0, 0, 25, 0, 0, 0, 75, 95.23697, 16.923132, -69.43669)
-visible = false
 
 [node name="TestBox" parent="TestBoxContainer" unique_id=437146563 instance=ExtResource("4_rarhs")]
 transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 6, 92.0397, 5.4197674, -49.78275)
