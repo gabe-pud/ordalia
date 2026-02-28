@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvjwc73b58bvs"
-path="res://.godot/imported/Mapa 1_texture_16px 125.png-c2575582370806432f5f1fd44ba81295.ctex"
+uid="uid://cpq7k7ff0k7bn"
+path="res://.godot/imported/Mapa 1_chao caverna_6.png-30bf9d60e9265c51f58342eb39162d72.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "7eacc0bcc6928624f6f018fd657b9b9c"
+"md5": "3edc7af2ea8b33fde0df763581146080"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1_texture_16px 125.png"
-dest_files=["res://.godot/imported/Mapa 1_texture_16px 125.png-c2575582370806432f5f1fd44ba81295.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_chao caverna_6.png"
+dest_files=["res://.godot/imported/Mapa 1_chao caverna_6.png-30bf9d60e9265c51f58342eb39162d72.ctex"]
 
 [params]
 

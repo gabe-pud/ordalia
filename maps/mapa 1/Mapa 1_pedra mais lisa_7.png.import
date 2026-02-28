@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvjwc73b58bvs"
-path="res://.godot/imported/Mapa 1_texture_16px 125.png-c2575582370806432f5f1fd44ba81295.ctex"
+uid="uid://bs3fjbiujt4e5"
+path="res://.godot/imported/Mapa 1_pedra mais lisa_7.png-b4c2bb497aec2706c933e0cf0b6d8aff.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "7eacc0bcc6928624f6f018fd657b9b9c"
+"md5": "673c5d81754bc34056d723e660ada4d9"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1_texture_16px 125.png"
-dest_files=["res://.godot/imported/Mapa 1_texture_16px 125.png-c2575582370806432f5f1fd44ba81295.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_pedra mais lisa_7.png"
+dest_files=["res://.godot/imported/Mapa 1_pedra mais lisa_7.png-b4c2bb497aec2706c933e0cf0b6d8aff.ctex"]
 
 [params]
 

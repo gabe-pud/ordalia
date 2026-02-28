@@ -4,7 +4,9 @@
 [ext_resource type="Script" uid="uid://cwqky34qch51w" path="res://scripts/player/player.gd" id="1_tuyoq"]
 [ext_resource type="Script" uid="uid://c8bpry1vq3x2h" path="res://scripts/player/MovementStateMachine.gd" id="2_g2els"]
 [ext_resource type="Script" uid="uid://rcjset7x72xs" path="res://scripts/player/PlayerIdle.gd" id="3_qhqgy"]
+[ext_resource type="Script" uid="uid://o4t1v8b7t1k7" path="res://scripts/player/camera_pivot.gd" id="3_sdcm4"]
 [ext_resource type="Script" uid="uid://5qxchnx0pfo2" path="res://scripts/player/PlayerWalk.gd" id="4_dqkch"]
+[ext_resource type="Script" uid="uid://wnxtb6bxpukw" path="res://scripts/player/ots_camera.gd" id="4_jh8vs"]
 [ext_resource type="Script" uid="uid://bbs1uohw63sgx" path="res://scripts/player/PlayerJump.gd" id="5_qlg0r"]
 [ext_resource type="Script" uid="uid://cxh7e3u5iey1a" path="res://scripts/player/CameraStateMachine.gd" id="7_fjrip"]
 [ext_resource type="Script" uid="uid://xpvl4px6xk8b" path="res://scripts/player/PlayerRun.gd" id="7_smehm"]
@@ -1912,7 +1914,7 @@ animations = [{
 [sub_resource type="BoxShape3D" id="BoxShape3D_bruh7"]
 size = Vector3(1, 0.5, 0.50598145)
 
-[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_khinc"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_6eyey"]
 
 [node name="Player" type="CharacterBody3D" unique_id=1919932343]
 collision_layer = 2
@@ -1921,6 +1923,14 @@ script = ExtResource("1_tuyoq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1528704911]
 shape = SubResource("CapsuleShape3D_khinc")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1663578366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+light_color = Color(1, 0.8579113, 0.50708383, 1)
+light_energy = 0.7
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 1.5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1311295132]
 root_node = NodePath("../AnimatedSprite3D")
@@ -1955,19 +1965,25 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 
-[node name="CameraPivot" type="Node3D" parent="." unique_id=1404661491]
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1404661491 node_paths=PackedStringArray("Player")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource("3_sdcm4")
+Player = NodePath("..")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1459703183]
 transform = Transform3D(1, 0, 0, 0, 0.9396926, 0.34202012, 0, -0.34202012, 0.9396926, 0, 0, 0)
-shape = SubResource("SeparationRayShape3D_khinc")
+shape = SubResource("SphereShape3D_6eyey")
 spring_length = 4.5
 
-[node name="OtsCamera" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1621030860]
+[node name="OtsCameraPosition" type="Node3D" parent="CameraPivot/SpringArm3D" unique_id=1623628299]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
+
+[node name="OtsCamera" type="Camera3D" parent="CameraPivot" unique_id=1621030860]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 current = true
+script = ExtResource("4_jh8vs")
 
 [node name="MovementStateMachine" type="Node" parent="." unique_id=614064289 node_paths=PackedStringArray("initial_state")]
 script = ExtResource("2_g2els")

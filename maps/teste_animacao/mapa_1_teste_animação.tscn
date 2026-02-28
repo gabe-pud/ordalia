@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://fp8njuqwfvx7"]
 
 [ext_resource type="PackedScene" uid="uid://c5t7sn138egdn" path="res://maps/teste_animacao/Mapa 1 teste animação.glb" id="1_3tmf8"]
-[ext_resource type="Shader" uid="uid://cph0qyn2xvik" path="res://scenes/new_shader.tres" id="2_b31pv"]
+[ext_resource type="Shader" uid="uid://cph0qyn2xvik" path="res://resources/shaders/new_shader.tres" id="2_b31pv"]
 [ext_resource type="Shader" uid="uid://blw47f26nxlmt" path="res://maps/teste_animacao/mapa_1_teste_animação.tres" id="2_pff5s"]
 [ext_resource type="Texture2D" uid="uid://m2cl072c8f55" path="res://maps/teste_animacao/Mapa 1 teste animação_Agua - parada.jpg" id="3_6g0il"]
 [ext_resource type="Texture2D" uid="uid://m2cl072c8f55" path="res://maps/teste_animacao/Mapa 1 teste animação_Agua - parada.jpg" id="3_ndj37"]

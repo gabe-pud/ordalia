@@ -1,0 +1,214 @@
+[gd_scene format=3 uid="uid://blh5e176kfy4u"]
+
+[ext_resource type="PackedScene" uid="uid://hnrdw4yrcdhe" path="res://maps/mapa 1/Mapa 1.glb" id="1_wryo5"]
+[ext_resource type="Texture2D" uid="uid://bn24bfk70q72p" path="res://maps/mapa 1/Mapa 1_Agua - parada.jpg" id="2_u1pg8"]
+[ext_resource type="Texture2D" uid="uid://3ed38sw3jjdx" path="res://maps/mapa 1/Mapa 1_Agua.jpg" id="3_2wqwh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2wqwh"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.627451)
+albedo_texture = ExtResource("2_u1pg8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yxpih"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.627451)
+albedo_texture = ExtResource("2_u1pg8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hax81"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.627451)
+albedo_texture = ExtResource("3_2wqwh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ktdn"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.7058824)
+albedo_texture = ExtResource("3_2wqwh")
+
+[node name="Mapa 1" unique_id=2100949107 instance=ExtResource("1_wryo5")]
+
+[node name="Agua" parent="." index="1" unique_id=2138383050]
+surface_material_override/0 = SubResource("StandardMaterial3D_2wqwh")
+
+[node name="Agua 2" parent="." index="2" unique_id=2018509794]
+surface_material_override/0 = SubResource("StandardMaterial3D_yxpih")
+
+[node name="Agua 3" parent="." index="3" unique_id=1129265218]
+surface_material_override/0 = SubResource("StandardMaterial3D_hax81")
+
+[node name="Agua 4" parent="." index="4" unique_id=873175973]
+surface_material_override/0 = SubResource("StandardMaterial3D_1ktdn")
+
+[node name="StaticBody3D" parent="Pedra 3 " parent_id_path=PackedInt32Array(1574694372) index="0" unique_id=671672435]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 2 " parent_id_path=PackedInt32Array(935374593) index="0" unique_id=2079542624]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 5 " parent_id_path=PackedInt32Array(1730633298) index="0" unique_id=1947862928]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1 " parent_id_path=PackedInt32Array(1306536077) index="0" unique_id=81272629]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalactites_008 " parent_id_path=PackedInt32Array(1104504561) index="0" unique_id=1968060536]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalactites_009 " parent_id_path=PackedInt32Array(1408956278) index="0" unique_id=225228540]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_030 " parent_id_path=PackedInt32Array(2072598768) index="0" unique_id=545915490]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_031 " parent_id_path=PackedInt32Array(1654197340) index="0" unique_id=1819670055]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_032 " parent_id_path=PackedInt32Array(470474874) index="0" unique_id=423226605]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_033 " parent_id_path=PackedInt32Array(78904590) index="0" unique_id=1653834209]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalactites_010 " parent_id_path=PackedInt32Array(980362339) index="0" unique_id=910980880]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_034 " parent_id_path=PackedInt32Array(15722528) index="0" unique_id=1383540491]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_035 " parent_id_path=PackedInt32Array(301501739) index="0" unique_id=1876436915]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_036 " parent_id_path=PackedInt32Array(1101744166) index="0" unique_id=1120184866]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalactites_011 " parent_id_path=PackedInt32Array(1449859306) index="0" unique_id=2057456566]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalactites_012 " parent_id_path=PackedInt32Array(1266904967) index="0" unique_id=14530466]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalactites_013 " parent_id_path=PackedInt32Array(1994317299) index="0" unique_id=1292818721]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalactites_014 " parent_id_path=PackedInt32Array(1485867599) index="0" unique_id=1498524206]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_037 " parent_id_path=PackedInt32Array(322554799) index="0" unique_id=1029907633]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_038 " parent_id_path=PackedInt32Array(506842950) index="0" unique_id=739608552]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_039 " parent_id_path=PackedInt32Array(149810869) index="0" unique_id=1607960736]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_040 " parent_id_path=PackedInt32Array(1231943949) index="0" unique_id=732759321]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_041 " parent_id_path=PackedInt32Array(1439476509) index="0" unique_id=1786300196]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_042 " parent_id_path=PackedInt32Array(755596693) index="0" unique_id=601793796]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_043 " parent_id_path=PackedInt32Array(1810684378) index="0" unique_id=834455827]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 4 " parent_id_path=PackedInt32Array(986391344) index="0" unique_id=695085224]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_001 " parent_id_path=PackedInt32Array(300226600) index="0" unique_id=508314335]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_002 " parent_id_path=PackedInt32Array(1067226405) index="0" unique_id=1651786227]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_044 " parent_id_path=PackedInt32Array(954297406) index="0" unique_id=841778166]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_045 " parent_id_path=PackedInt32Array(1692385290) index="0" unique_id=694931941]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_003 " parent_id_path=PackedInt32Array(1165858940) index="0" unique_id=424277675]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_046 " parent_id_path=PackedInt32Array(1755348541) index="0" unique_id=163951196]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_004 " parent_id_path=PackedInt32Array(402042945) index="0" unique_id=1765438238]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_005 " parent_id_path=PackedInt32Array(1882439174) index="0" unique_id=921483867]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_006 " parent_id_path=PackedInt32Array(307571061) index="0" unique_id=1545440228]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_047 " parent_id_path=PackedInt32Array(725974738) index="0" unique_id=796713909]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_048 " parent_id_path=PackedInt32Array(43955734) index="0" unique_id=328836779]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_049 " parent_id_path=PackedInt32Array(397695424) index="0" unique_id=1118835116]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_007 " parent_id_path=PackedInt32Array(297534208) index="0" unique_id=1583323367]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_008 " parent_id_path=PackedInt32Array(8461360) index="0" unique_id=1995817626]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_051 " parent_id_path=PackedInt32Array(1825389090) index="0" unique_id=1508002632]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalactites_015 " parent_id_path=PackedInt32Array(1104367404) index="0" unique_id=609068063]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_010 " parent_id_path=PackedInt32Array(612101467) index="0" unique_id=1542679035]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_013 " parent_id_path=PackedInt32Array(530119671) index="0" unique_id=580597233]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_054 " parent_id_path=PackedInt32Array(318980166) index="0" unique_id=198793299]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_055 " parent_id_path=PackedInt32Array(799274621) index="0" unique_id=990556247]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_056 " parent_id_path=PackedInt32Array(844360652) index="0" unique_id=301469495]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_014 " parent_id_path=PackedInt32Array(1176113854) index="0" unique_id=651221984]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_015 " parent_id_path=PackedInt32Array(1041463659) index="0" unique_id=1859317374]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_016 " parent_id_path=PackedInt32Array(1900184923) index="0" unique_id=1026151032]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_017 " parent_id_path=PackedInt32Array(323158408) index="0" unique_id=1291218259]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_018 " parent_id_path=PackedInt32Array(352693971) index="0" unique_id=422983252]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_019 " parent_id_path=PackedInt32Array(222601235) index="0" unique_id=2147057317]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_020 " parent_id_path=PackedInt32Array(1800784640) index="0" unique_id=1798173795]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Estalagmite_060 " parent_id_path=PackedInt32Array(1008009517) index="0" unique_id=1966838575]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1_014 _001" parent_id_path=PackedInt32Array(929257511) index="0" unique_id=1245526072]
+collision_layer = 2
+
+[node name="StaticBody3D" parent="Pedra 1 _001" parent_id_path=PackedInt32Array(268711047) index="0" unique_id=2011258260]
+collision_layer = 2

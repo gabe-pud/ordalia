@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b073lr7e82ceb"]
 
-[ext_resource type="PackedScene" uid="uid://cc7bnft0we11n" path="res://scenes/Player.tscn" id="3_rarhs"]
-[ext_resource type="PackedScene" uid="uid://dxfw5w3pshges" path="res://scenes/TestBox.tscn" id="4_rarhs"]
-[ext_resource type="PackedScene" uid="uid://k60rex0pmecx" path="res://scenes/camera_switch.tscn" id="4_vcsgt"]
-[ext_resource type="PackedScene" uid="uid://baqbambwaa2qg" path="res://maps/mapa 1/Mapa 1.glb" id="5_vcsgt"]
-[ext_resource type="PackedScene" uid="uid://e84pby1vmo52" path="res://scenes/HangColision.tscn" id="6_c01mt"]
+[ext_resource type="PackedScene" uid="uid://cc7bnft0we11n" path="res://scenes/entities/Player.tscn" id="3_rarhs"]
+[ext_resource type="PackedScene" uid="uid://dxfw5w3pshges" path="res://scenes/objects/TestBox.tscn" id="4_rarhs"]
+[ext_resource type="PackedScene" uid="uid://k60rex0pmecx" path="res://scenes/objects/camera_switch.tscn" id="4_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://blh5e176kfy4u" path="res://maps/mapa 1/mapa_1.tscn" id="5_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://e84pby1vmo52" path="res://scenes/objects/HangColision.tscn" id="6_c01mt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4xowi"]
 sky_top_color = Color(0.45242697, 0.4001497, 0.52569026, 1)
@@ -17,19 +17,30 @@ sky_material = SubResource("ProceduralSkyMaterial_4xowi")
 
 [sub_resource type="Environment" id="Environment_noarx"]
 background_mode = 2
+background_energy_multiplier = 0.5
 sky = SubResource("Sky_a202f")
 tonemap_mode = 2
 glow_enabled = true
+fog_enabled = true
+fog_mode = 1
+fog_light_energy = 0.05
+fog_density = 3.0
+fog_depth_curve = 0.7
+fog_depth_begin = 17.0
+volumetric_fog_density = 0.0253
 
 [node name="Main" type="Node3D" unique_id=1805240056]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=805364394]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_energy = 0.0
+shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1340217298]
 environment = SubResource("Environment_noarx")
 
-[node name="Mapa 1" parent="." unique_id=973903927 instance=ExtResource("5_vcsgt")]
-
 [node name="Player" parent="." unique_id=1919932343 instance=ExtResource("3_rarhs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 14, 5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.248169, 4.0469933, 5.501675)
 
 [node name="TestBoxContainer" type="Node" parent="." unique_id=173396206]
 
@@ -48,7 +59,7 @@ visible = false
 [node name="HangPositionContainer" type="Node" parent="." unique_id=1489894630]
 
 [node name="HangPosition" parent="HangPositionContainer" unique_id=1215003824 instance=ExtResource("6_c01mt")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24.087934, 8.280492, -24.226788)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24.093737, 8.1249275, -24.187956)
 
 [node name="HangPosition2" parent="HangPositionContainer" unique_id=1595155419 instance=ExtResource("6_c01mt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.06315, 12.500393, -62.143967)
@@ -68,4 +79,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.00805, 18.450874, -76.1366
 transform = Transform3D(-4.3929944e-08, 0, 5, 0, 4, 0, -1.005, 0, -2.1855695e-07, 92.07779, 11.027907, -30.99835)
 
 [node name="CameraSwitch2" parent="CameraSwitchContainer" unique_id=1285892485 instance=ExtResource("4_vcsgt")]
-transform = Transform3D(-4.371139e-08, 0, -5, 0, 6, 0, 1, 0, -2.1855695e-07, 91.931854, 26.074692, -109.521965)
+transform = Transform3D(-4.371139e-08, 0, -5, 0, 6, 0, 1, 0, -2.1855695e-07, 91.931854, 26.074692, -113.34986)
+
+[node name="Mapa 1" parent="." unique_id=2100949107 instance=ExtResource("5_vcsgt")]

@@ -2,19 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvjwc73b58bvs"
-path="res://.godot/imported/Mapa 1_texture_16px 125.png-c2575582370806432f5f1fd44ba81295.ctex"
+uid="uid://dmj2ikxabbrhv"
+path="res://.godot/imported/Mapa 1_texture_16px 125_n.png-4ffe621a18475f3eaff8b166a4c1acbd.ctex"
 metadata={
 "vram_texture": false
 }
 generator_parameters={
-"md5": "7eacc0bcc6928624f6f018fd657b9b9c"
+"md5": "fdc8fbcdd0ac3f106e837a620b07fcaf"
 }
 
 [deps]
 
-source_file="res://maps/mapa 1/Mapa 1_texture_16px 125.png"
-dest_files=["res://.godot/imported/Mapa 1_texture_16px 125.png-c2575582370806432f5f1fd44ba81295.ctex"]
+source_file="res://maps/mapa 1/Mapa 1_texture_16px 125_n.png"
+dest_files=["res://.godot/imported/Mapa 1_texture_16px 125_n.png-4ffe621a18475f3eaff8b166a4c1acbd.ctex"]
 
 [params]
 
@@ -24,12 +24,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://maps/mapa 1/Mapa 1_texture_16px 125_n.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
